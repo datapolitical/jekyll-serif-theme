@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
 
   # spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|recipes|drinks|LICENSE|README)}i) }
   spec.files = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r!^(assets|images|_(data|includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
+    f.match(%r!^(assets|images|_(data|includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown|svg|jpg)|$)))!i)
   end
   spec.add_runtime_dependency "webrick"
   spec.add_runtime_dependency "jekyll-environment-variables"
