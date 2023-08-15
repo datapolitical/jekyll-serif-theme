@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-serif-theme"
-  spec.version       = "3.1.0"
+  spec.version       = "1.0"
   spec.authors       = ["Chris Nicholson"]
   spec.email         = ["datapolitical@gmail.com"]
 
@@ -15,18 +15,9 @@ Gem::Specification.new do |spec|
   spec.files = `git ls-files -z`.split("\x0").select do |f|
     f.match(%r!^(assets|_(includes|layouts|sass)/|(LICENSE|README)((\.(txt|md|markdown)|$)))!i)
   end
-  spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
-  spec.add_runtime_dependency "jekyll-feed"
-  spec.add_runtime_dependency "jekyll-gist"
-  spec.add_runtime_dependency "ffi"
-  spec.add_runtime_dependency "jekyll-remote-theme"
-  spec.add_runtime_dependency 'jekyll-paginate'
-  spec.add_runtime_dependency "jekyll-datapage-generator"
-  spec.add_runtime_dependency 'jekyll-sitemap'
-  spec.add_runtime_dependency 'jekyll-pwa-workbox'
-  spec.add_runtime_dependency 'jekyll_picture_tag'
-  spec.add_runtime_dependency 'jekyll-include-cache'
-  spec.add_runtime_dependency 'jekyll_version_plugin'
+  spec.add_runtime_dependency "webrick"
+  spec.add_runtime_dependency "jekyll-environment-variables"
+  
 
   spec.add_development_dependency "jekyll", ">= 4.1.1"
   spec.add_development_dependency "bundler", ">= 2.1.4"
